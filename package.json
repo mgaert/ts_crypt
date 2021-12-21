@@ -1,6 +1,6 @@
 {
   "name": "ts_crypt",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A TypeScript implementation of the Unix crypt(3) call.",
   "main": "dist/crypt3.js",
   "files": [
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "tsc --build --clean && tsc --build",
-    "test":"tsc && nyc --reporter=lcov --require ts-node/register jasmine"
+    "test": "tsc && nyc --reporter=lcov --require ts-node/register jasmine"
   },
   "repository": {
     "type": "git",
