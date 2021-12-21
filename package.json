@@ -2,7 +2,7 @@
   "name": "ts_crypt",
   "version": "1.0.0",
   "description": "A TypeScript implementation of the Unix crypt(3) call.",
-  "main": "crypt3.js",
+  "main": "dist/crypt3.js",
   "scripts": {
     "build": "tsc --build --clean && tsc --build",
     "test": "jasmine-ts --config=spec/support/jasmine.json spec/crypt.spec.ts"
