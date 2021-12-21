@@ -377,22 +377,22 @@ export class Crypt3 {
     0x6B, 0x6C, 0x6D, 0x6E, 0x6F, 0x70, 0x71, 0x72,
     0x73, 0x74, 0x75, 0x76, 0x77, 0x78, 0x79, 0x7A];
 
-  randChar(): string {
+  private randChar(): string {
     return this.GOODCHARS[Math.floor(64 * Math.random())];
   }
 
-  byteToUnsigned(b: number): number {
+  private byteToUnsigned(b: number): number {
     const value = Math.floor(b);
     return (value >= 0 ? value : value + 256);
   }
-  fourBytesToInt(b: number[], offset: number): number {
+  private fourBytesToInt(b: number[], offset: number): number {
     let value = this.byteToUnsigned(b[offset++]);
     value |= (this.byteToUnsigned(b[offset++]) << 8);
     value |= (this.byteToUnsigned(b[offset++]) << 16);
     value |= (this.byteToUnsigned(b[offset++]) << 24);
     return value;
   }
-  intToFourBytes(iValue: number, b: number[], offset: number): void {
+  private intToFourBytes(iValue: number, b: number[], offset: number): void {
     b[offset++] = ((iValue) & 0xff);
     b[offset++] = ((iValue >>> 8) & 0xff);
     b[offset++] = ((iValue >>> 16) & 0xff);
@@ -410,7 +410,7 @@ export class Crypt3 {
     a = a ^ t ^ (t >>> (16 - n));
     return a;
   }
-  des_set_key(key: number[]) {
+  private des_set_key(key: number[]) {
     let c: number, d: number, s: number, t: number, i: number, j: number;
 
     const schedule = [
@@ -492,7 +492,7 @@ export class Crypt3 {
       | this.SPtrans[6][(u >>> 24) & 0x3f];
     return L;
   }
-  body(schedule: number[], Eswap0: number, Eswap1: number): number[] {
+  private body(schedule: number[], Eswap0: number, Eswap1: number): number[] {
     let left = 0;
     let right = 0;
     let t = 0;
