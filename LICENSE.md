@@ -22,40 +22,38 @@
  4. If you include any Windows specific code (or a derivative thereof) from the apps directory (application code) you must include an acknowledgemnt:
     "This product includes software written by Tim Hudson (tjh@mincom.oz.au)"
    
-   THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
-   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-   ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
-   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-   OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-   LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-   OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-   SUCH DAMAGE.
+THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
    
-   The licence and distribution terms for any publically available version or derivative of this code cannot be changed. i.e. this code cannot simply be copied and put under another distribution licence
-   [including the GNU Public Licence.]
+The licence and distribution terms for any publically available version or derivative of this code cannot be changed. i.e. this code cannot simply be copied and put under another distribution licence
+[including the GNU Public Licence.]
    
-   javaPort The Java Port
+javaPort The Java Port
    
    The port to Java is known as jcrypt.java and can be found at:
    http://locutus.kingwoodcable.com/jfd/crypt.html
    
-   javascriptPort The JavaScript Port
+javascriptPort The JavaScript Port
    
    The original JavaScript port can be found here:
    http://whereswalden.com/tech/internet/javacrypt/
    
-   TypeScript The TypeScript Port by Michael Gärtner (mgaert@gmx.de)
+TypeScript The TypeScript Port by Michael Gärtner (mgaert@gmx.de)
    
    The port for TypeScript simplifies the callable interface, and cleans up the code.
-   There is now a 'crypt' function that looks like and behaves the same as the C function of the same name.
-   All of the other code and variables needed for the implementation are now in the 'Crypt3' name space.
-   No class instance is required any more.
+   There is now a static 'crypt' member that looks like and behaves the same as the C function of the same name.
    
-   The authors:
+The authors:
    Eric Young <eay@mincom.oz.au> - the original code
    John F. Dumas - jcrypt.java
    Jeff Walden - javacrypt.js
-   
+   Michael Gaertner - crypt3.ts
