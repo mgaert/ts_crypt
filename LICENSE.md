@@ -1,4 +1,4 @@
- A JavaScript implementation of the Unix crypt(3) call.
+ A TypeScript implementation of the Unix crypt(3) call.
  
  This is a rewrite of the JavaScript port of the Java port of the original C source. It provides a crypt() function which will return a hash based on the input parameters.
  
@@ -17,10 +17,10 @@
     notice, this list of conditions and the following disclaimer in the
     documentation and/or other materials provided with the distribution.
  3. All advertising materials mentioning features or use of this software must display the following acknowledgement:
-   "This product includes cryptographic software written by Eric Young (eay@mincom.oz.au)"
-   The word 'cryptographic' can be left out if the rouines from the library being used are not cryptographic related :-).
+    "This product includes cryptographic software written by Eric Young (eay@mincom.oz.au)"
+    The word 'cryptographic' can be left out if the rouines from the library being used are not cryptographic related :-).
  4. If you include any Windows specific code (or a derivative thereof) from the apps directory (application code) you must include an acknowledgemnt:
-   "This product includes software written by Tim Hudson (tjh@mincom.oz.au)"
+    "This product includes software written by Tim Hudson (tjh@mincom.oz.au)"
    
    THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
@@ -47,7 +47,7 @@
    The original JavaScript port can be found here:
    http://whereswalden.com/tech/internet/javacrypt/
    
-   TypeScript The TypeScript Port
+   TypeScript The TypeScript Port by Michael Gärtner (mgaert@gmx.de)
    
    The port for TypeScript simplifies the callable interface, and cleans up the code.
    There is now a 'crypt' function that looks like and behaves the same as the C function of the same name.
