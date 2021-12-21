@@ -22,7 +22,7 @@
     "typescript"
   ],
   "author": "Michael Gaertner",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "OpenSSL",
   "bugs": {
     "url": "https://github.com/mgaert/ts_crypt/issues"
   },
