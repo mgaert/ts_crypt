@@ -5,7 +5,7 @@
   "main": "dist/crypt3.js",
   "scripts": {
     "build": "tsc --build --clean && tsc --build",
-    "test": "jasmine-ts --config=spec/support/jasmine.json spec/crypt.spec.ts"
+    "test":"tsc && nyc --reporter=lcov --require ts-node/register jasmine"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/mgaert/ts_crypt#readme",
   "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@types/jasmine": "^3.10.2",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
@@ -30,6 +31,8 @@
     "jasmine": "^3.10.0",
     "jasmine-spec-reporter": "^7.0.0",
     "jasmine-ts": "^0.4.0",
+    "nyc": "^15.1.0",
+    "source-map-support": "^0.5.21",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   }
